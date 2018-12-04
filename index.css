@@ -19,14 +19,14 @@ body
     background-color:rgb(255, 123, 0);
   }
   .tabcontent {
-    color: white;
+    color: black;
     display: none;
     padding: 100px 20px;
     height: 100%;
   }
-  #home{background-color:red;}
-  #numberconversion{background-color:green;}
-  #numberoutputs{background-color:blue;}
-  #combinatronics{background-color:purple;}
-  #Truthtables{background-color:black;}
-  #randomvalues{background-color:brown;}
+  #home{background-color:white;}
+  #numberconversion{background-color:white;}
+  #numberoutputs{background-color:white;}
+  #combinatronics{background-color:white;}
+  #Truthtables{background-color:white;}
+  #randomvalues{background-color:white;}
