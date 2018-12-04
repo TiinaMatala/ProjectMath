@@ -3,6 +3,7 @@
     <head>
 <link rel="stylesheet" type="text/css" href="index.css">
 <script src="index.js"></script>
+<script src="NumberConversions.js"></script>
 <title>Project MATH</title>
     </head>
     <body>
@@ -14,12 +15,29 @@
         <button class="tablink" onclick="openPage('Randomvalues',this, 'rgb(255, 123, 0)')">Random values</button>
         
         <div id="Home" class="tabcontent">
-            <h3>Home</h3>
-            <p>This is our project</p>
+            <h3>Hello!</h3>
+            <p>This is the website with mathematical functions</p>
           </div>
           <div id="Numberconversion" class="tabcontent">
             <h3>Number conversion</h3>
-            <p>Here we convert some numbers</p> 
+            <p>Here we convert some numbers</p>
+            <div class="fromTo">
+                From:  
+                <select>
+                    <option id="binary">Binary</option>
+                    <option id="octal">Octal</option>
+                    <option id="decimal">Decimal</option>                        
+                    <option id="hexadecimal">Hexadecimal</option>
+                </select> 
+                To:
+                <select>
+                    <option id="binary">Binary</option>
+                    <option id="octal">Octal</option>
+                    <option id="decimal">Decimal</option>
+                    <option id="hexadecimal">Hexadecimal</option>
+                </select>
+            </div>
+            <button onclick="test()" class="">Print</button>
           </div>
           <div id="Numberoutputs" class="tabcontent">
             <h3>Number outputs</h3>
