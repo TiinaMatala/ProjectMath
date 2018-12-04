@@ -25,8 +25,8 @@ body
     height: 100%;
   }
   #home{background-color:red;}
-  #number_conversion{background-color:green;}
-  #number_outputs{background-color:blue;}
+  #numberconversion{background-color:green;}
+  #numberoutputs{background-color:blue;}
   #combinatronics{background-color:purple;}
-  #Truth_tables{background-color:black;}
-  #random_values{background-color:white;}
+  #Truthtables{background-color:black;}
+  #randomvalues{background-color:brown;}
