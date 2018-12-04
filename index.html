@@ -6,15 +6,35 @@
 <title>Project MATH</title>
     </head>
     <body>
-<div class="table"></div>
-<div class="li1">
-<ul>
-    <li>Number conversion</li>
-    <li>Number outputs</li>
-    <li>Combinatorics</li>
-    <li>Truth tables</li>
-    <li>Random values</li>
-</ul>
-</div>
+        <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+        <button class="tablink" onclick="openPage('Number conversion', this, 'green')" id="defaultOpen">Number conversion </button>
+        <button class="tablink" onclick="openPage('Number outputs', this, 'blue')">number outputs</button>
+        <button class="tablink" onclick="openPage('Combinatronics', this, 'purple')">Combinatronics</button>
+        <button class="tablink" onclick="openPage('Truth tables', this, 'black')">Truth tables</button>
+        <button class="tablink" onclick="openPage('Random values',this, 'white')">Random values</button>
+        <div id="Home" class="tabcontent">
+            <h3>Home</h3>
+            <p>This is our project</p>
+          </div>
+          <div id="Number conversion" class="tabcontent">
+            <h3>Number conversion</h3>
+            <p>Here we convert some numbers</p> 
+          </div>
+          <div id="Number outputs" class="tabcontent">
+            <h3>Number outputs</h3>
+            <p>This is where we output some numbers.</p>
+          </div>
+          <div id="Combinatronics" class="tabcontent">
+            <h3>Combinatronics</h3>
+            <p>These are some combinatronics.</p>
+          </div>
+          <div id="Truth tables" class="tabcontent">
+              <h3>Truth tables</h3>
+              <p>Here are some truth tables</p>
+          </div>
+          <div id="Random values" class="tabcontent">
+              <h3>Random values</h3>
+              <p>Here are some random values</p>
+          </div>
     </body>
 </html>

@@ -1,12 +1,32 @@
 body
 {
-    background-color:white;
+    height: 100%;
+    margin:0;
+    font-family: sans-serif;
 }
-.li1
-{
- background-color:gray;
- font-family: sans-serif;
- font-size: 23px;
- border: gray;
- border-style:groove; 
-}
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  .tablink:hover {
+    background-color:orange;
+  }
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  #home{background-color:red;}
+  #number_conversion{background-color:green;}
+  #number_outputs{background-color:blue;}
+  #combinatronics{background-color:purple;}
+  #Truth_tables{background-color:black;}
+  #random_values{background-color:white;}
