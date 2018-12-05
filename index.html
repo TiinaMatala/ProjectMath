@@ -6,7 +6,7 @@
 <script src="NumberConversions.js"></script>
 <title>Project MATH</title>
     </head>
-    <body>
+    <body onload="create_table_content()">
         <button class="tablink" onclick="openPage('Home', this, 'rgb(255, 123, 0)')">Home</button>
         <button class="tablink" onclick="openPage('Numberconversion', this, 'rgb(255, 123, 0)')" id="defaultOpen">Number conversion </button>
         <button class="tablink" onclick="openPage('Numberoutputs', this, 'rgb(255, 123, 0)')">Number outputs</button>
@@ -53,6 +53,9 @@
           </div>
           <div id="Numberoutputs" class="tabcontent">
             <h3>Number outputs</h3>
+            <button onclick="createx()">Print table</button>
+            <table id="number_table" border="1" class="table1">
+            </table>
             <p>This is where we output some numbers.</p>
           </div>
           <div id="Combinatronics" class="tabcontent">

@@ -55,3 +55,11 @@ body
   #combinatronics{background-color:white;}
   #Truthtables{background-color:white;}
   #randomvalues{background-color:white;}
+  
+  .table1
+  {
+    text-align: center;
+    margin: auto;
+    border: 10px;
+    padding: 10px;
+  }
