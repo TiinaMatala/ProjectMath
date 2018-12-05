@@ -22,22 +22,34 @@
             <h3>Number conversion</h3>
             <p>Here we convert some numbers</p>
             <div class="fromTo">
-                From:  
-                <select>
-                    <option id="binary">Binary</option>
-                    <option id="octal">Octal</option>
-                    <option id="decimal">Decimal</option>                        
-                    <option id="hexadecimal">Hexadecimal</option>
-                </select> 
-                To:
-                <select>
-                    <option id="binary">Binary</option>
-                    <option id="octal">Octal</option>
-                    <option id="decimal">Decimal</option>
-                    <option id="hexadecimal">Hexadecimal</option>
-                </select>
+                <table
+                <tr>
+                    <td>From:</td>
+                    <td>
+                        <select id="initialSystem">
+                            <option id="binary" value="2">Binary</option>
+                            <option id="octal" value="8">Octal</option>
+                            <option id="decimal" value="10">Decimal</option>                        
+                            <option id="hexadecimal" value="16">Hexadecimal</option>
+                        </select>
+                    </td>    
+                    <td> <input type="text" placeholder="Type in a number here" id="From"> </td>
+                </tr> 
+                <tr>
+                    <td>To:</td> 
+                    <td>
+                        <select id="finalSystem">
+                            <option id="binary" value="2">Binary</option>
+                            <option id="octal" value="8">Octal</option>
+                            <option id="decimal" value="10">Decimal</option>
+                            <option id="hexadecimal" value="16">Hexadecimal</option>
+                        </select>
+                    </td>        
+                    <td> <output type="text" placeholder="The result is shown here" id="To" readonly> </td>    
+                </tr>
+                </table>
             </div>
-            <button onclick="test()" class="">Print</button>
+            <button onclick="test()" class="">Convert</button>
           </div>
           <div id="Numberoutputs" class="tabcontent">
             <h3>Number outputs</h3>
