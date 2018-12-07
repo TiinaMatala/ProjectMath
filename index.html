@@ -1,71 +1,75 @@
 <DOCTYPE! html>
-<html>
+    <html>
+
     <head>
-<link rel="stylesheet" type="text/css" href="index.css">
-<script src="index.js"></script>
-<script src="NumberConversions.js"></script>
-<title>Project MATH</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="NumberConversions.js"></script>
+        <title>Project MATH</title>
     </head>
+
     <body>
-        <button class="tablink" onclick="openPage('Home', this, 'rgb(255, 123, 0)')">Home</button>
-        <button class="tablink" onclick="openPage('Numberconversion', this, 'rgb(255, 123, 0)')" id="defaultOpen">Number conversion </button>
-        <button class="tablink" onclick="openPage('Numberoutputs', this, 'rgb(255, 123, 0)')">Number outputs</button>
-        <button class="tablink" onclick="openPage('Combinatronics', this, 'rgb(255, 123, 0)')">Combinatronics</button>
-        <button class="tablink" onclick="openPage('Truthtables', this, 'rgb(255, 123, 0)')">Truth tables</button>
-        <button class="tablink" onclick="openPage('Randomvalues',this, 'rgb(255, 123, 0)')">Random values</button>
-        
+        <button class="tablink" onclick="openPage('Home', this, 'rgb(255, 123, 0)', 'white')" id="defaultOpen">Home</button>
+        <button class="tablink" onclick="openPage('Numberconversion', this, 'rgb(255, 123, 0)', 'white')">Number
+            conversion </button>
+        <button class="tablink" onclick="openPage('Numberoutputs', this, 'rgb(255, 123, 0)', 'white')">Number outputs</button>
+        <button class="tablink" onclick="openPage('Combinatorics', this, 'rgb(255, 123, 0)', 'white')">Combinatorics</button>
+        <button class="tablink" onclick="openPage('Truthtables', this, 'rgb(255, 123, 0)', 'white')">Truth tables</button>
+        <button class="tablink" onclick="openPage('Randomvalues',this, 'rgb(255, 123, 0)', 'white')">Random values</button>
+
         <div id="Home" class="tabcontent">
             <h3>Hello!</h3>
             <p>This is the website with mathematical functions</p>
-          </div>
-          <div id="Numberconversion" class="tabcontent">
+        </div>
+        <div id="Numberconversion" class="tabcontent">
             <h3>Number conversion</h3>
             <p>Here we convert some numbers</p>
             <div class="fromTo">
-                <table
-                <tr>
-                    <td>From:</td>
-                    <td>
-                        <select id="initialSystem">
-                            <option id="binary" value="2">Binary</option>
-                            <option id="octal" value="8">Octal</option>
-                            <option id="decimal" value="10">Decimal</option>                        
-                            <option id="hexadecimal" value="16">Hexadecimal</option>
-                        </select>
-                    </td>    
-                    <td> <input type="text" placeholder="Type in a number here" id="From"> </td>
-                </tr> 
-                <tr>
-                    <td>To:</td> 
-                    <td>
-                        <select id="finalSystem">
-                            <option id="binary" value="2">Binary</option>
-                            <option id="octal" value="8">Octal</option>
-                            <option id="decimal" value="10">Decimal</option>
-                            <option id="hexadecimal" value="16">Hexadecimal</option>
-                        </select>
-                    </td>        
-                    <td> <output type="text" placeholder="The result is shown here" id="To" readonly> </td>    
-                </tr>
+                <table>
+                    <tr>
+                        <td>From:</td>
+                        <td>
+                            <select id="initialSystem">
+                                <option id="binary" value="2">Binary</option>
+                                <option id="octal" value="8">Octal</option>
+                                <option id="decimal" value="10">Decimal</option>
+                                <option id="hexadecimal" value="16">Hexadecimal</option>
+                            </select>
+                        </td>
+                        <td> <input type="text" placeholder="Type in a number here" id="From" min="1" max="16"> </td>
+                    </tr>
+                    <tr>
+                        <td>To:</td>
+                        <td>
+                            <select id="finalSystem">
+                                <option id="binary" value="2">Binary</option>
+                                <option id="octal" value="8">Octal</option>
+                                <option id="decimal" value="10">Decimal</option>
+                                <option id="hexadecimal" value="16">Hexadecimal</option>
+                            </select>
+                        </td>
+                        <td> <input type="text" placeholder="The result is shown here" id="To" readonly> </td>
+                    </tr>
                 </table>
             </div>
             <button onclick="test()" class="">Convert</button>
-          </div>
-          <div id="Numberoutputs" class="tabcontent">
+        </div>
+        <div id="Numberoutputs" class="tabcontent">
             <h3>Number outputs</h3>
             <p>This is where we output some numbers.</p>
-          </div>
-          <div id="Combinatronics" class="tabcontent">
-            <h3>Combinatronics</h3>
-            <p>These are some combinatronics.</p>
-          </div>
-          <div id="Truthtables" class="tabcontent">
-              <h3>Truth tables</h3>
-              <p>Here are some truth tables</p>
-          </div>
-          <div id="Randomvalues" class="tabcontent">
-              <h3>Random values</h3>
-              <p>Here are some random values</p>
-          </div>
+        </div>
+        <div id="Combinatorics" class="tabcontent">
+            <h3>Combinatorics</h3>
+            <p>These are some combinatorics.</p>
+        </div>
+        <div id="Truthtables" class="tabcontent">
+            <h3>Truth tables</h3>
+            <p>Here are some truth tables</p>
+        </div>
+        <div id="Randomvalues" class="tabcontent">
+            <h3>Random values</h3>
+            <p>Here are some random values</p>
+        </div>
     </body>
-</html>
+    <script src="index.js"></script>
+
+    </html>
