@@ -15,7 +15,7 @@ function(){
     r =
     parseFloat(document.getElementById('r').value);
     if (n && r){
-        document.getElementById('result').innerHTML = 
+        document.getElementById('result_combinations').innerHTML = 
     combination(n,r);
     }
 }
@@ -36,7 +36,7 @@ function(){
     s = 
     parseFloat(document.getElementById('s').value);    
     if( q && s){
-        document.getElementById('result1').innerHTML =
+        document.getElementById('result_permutations').innerHTML =
         permutation(q,s);
     }
 }

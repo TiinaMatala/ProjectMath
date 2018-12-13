@@ -95,3 +95,16 @@ h3
   border: solid black;
   border-collapse: collapse;
 }
+.right{
+  position:absolute;
+  right:0;
+  width:50%;
+  margin-top: 30px;
+  
+}
+.left{
+  position:absolute;
+  left:0;
+  width: 50%;
+  margin-top: 30px;
+}
