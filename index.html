@@ -6,6 +6,8 @@
         <script src="NumberConversions.js"></script>
         <script src="numberOutputs.js"></script>
         <script src="randomValues.js"></script>
+        <script src="Project6.js"></script>
+        <script src="truthTable.js"></script>
         <title>Project MATH</title>
     </head>
 
@@ -17,6 +19,8 @@
         <button class="tablink" onclick="openPage('Combinatorics', this, 'rgb(255, 123, 0)', 'white')">Combinatorics</button>
         <button class="tablink" onclick="openPage('Truthtables', this, 'rgb(255, 123, 0)', 'white')">Truth tables</button>
         <button class="tablink" onclick="openPage('Randomvalues',this, 'rgb(255, 123, 0)', 'white')">Random values</button>
+        <button class="tablink" onclick="openPage('Project6',this, 'rgb(255, 123, 0)', 'white')">Fibonacci Sequence</button>
+
 
         <div id="Home" class="tabcontent">
             <h3>Hello!</h3>
@@ -70,13 +74,37 @@
         <div id="Truthtables" class="tabcontent">
             <h3>Truth tables</h3>
             <p>Here are some truth tables</p>
+            <button type="button" class="button_style" onclick="truth()">Print Truth Table</button>
+            <button type="button" class="button_style" onclick="clearTruthTable()">Clear table</button>
+            <table id="truth_table" class="actualTables"></table>
         </div>
         <div id="Randomvalues" class="tabcontent">
             <h3>Random values</h3>
             <p>Here are some random values</p>
+            From: <input type="number" id="from_RNG">
+            To: <input type="number" id="to_RNG">
+            Amount of numbers: <input type="number" id="amount_RNG">
             <button type="button" onclick="generate_random_value()">Show random value distribution</button>
             <button type="button" onclick="check_duplicates()">Test</button>
             <p id="random_test"></p>
+        </div>
+        <div id="Project6" class="tabcontent">
+            <h3>Fibonacci Sequence</h3>
+            <p>Here is a a Fibonacci Sequence generator</p>
+            <table>
+                <tr>
+                    <td>Number of sequences:</td>
+                    <td>
+                        <input type="number" placeholder="Type in an amount of number in the sequence" id="maximum">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <output id="fiSequences">  </output>
+                    </td>
+                </tr>
+            </table>
+            <button type="button" class="button_style" onclick="Fibonacci_sequence()">Press me</button>
         </div>
     </body>
     <script src="index.js"></script>

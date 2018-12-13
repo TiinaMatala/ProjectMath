@@ -5,7 +5,7 @@ function test()
     var finalSystem = document.getElementById("finalSystem").value;;
     var to_number;
     var wrngInpt = "Incorrect Input";
-    var characters = /^[a-fA-F]+$/;
+    var characters = /^[a-fA-F]+$/;   //the RegExp 
     
     if (initialSystem == 10)
     {
@@ -24,7 +24,7 @@ function test()
     {   
         for ( index = 0; index < from_number.length; index++ )
         { 
-            if ( from_number.charAt(index) >= initialSystem )
+            if ( from_number.charAt(index) >= initialSystem || from_number.charAt(index) == "-" )
             {
                 document.getElementById("To").value = wrngInpt;
             }

@@ -1,18 +1,17 @@
 var random_array = [];
+
 function generate_random_value() 
 {
-    for (var i = 0; i  < 100 ; i++)
+    var from = document.getElementById("from_RNG").value;
+    var to = document.getElementById("to_RNG").value;
+    var number_amount = document.getElementById("amount_RNG").value;
+    for (var i = 0; i  < number_amount ; i++)
     {
-        var random_value = Math.floor(Math.random() * 101) ;
-
+        var random_value = (Math.floor(Math.random() * ( to - from )) + from);
         random_array.push(random_value);
-
         console.log(random_array[i]) ;
         
     }
-    
-    check_duplicates();
-    
 }
 
 function check_duplicates()
