@@ -1,20 +1,3 @@
-function createx() {
-    var num = 0;
-    var i;
-    for (i=0; i<=50; i++) {
-        var decimal = i.toString();
-        var binary = i.toString(2);
-        var octal = i.toString(8);
-        var hexa = i.toString(16);
-        console.log(i + " kaxkantalukuna on " + binary 
-        + " octaalina on " + octal
-        + " hexadecimaalina on " + hexa);
-
-
-    }
-
-}
-
 function create_table_content() {
     //alert( "Button pressed" );
     console.log( "Button pressed");
