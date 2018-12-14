@@ -5,7 +5,7 @@ function test()
     var finalSystem = document.getElementById("finalSystem").value;;
     var to_number;
     var wrngInpt = "Incorrect Input";
-    var characters = /^[a-fA-F]+$/;   //the RegExp 
+    var characters = /^[a-fA-F]+$/;   //the RegExp value for characters of hexadecimal number system
     
     if (initialSystem == 10)
     {
@@ -24,15 +24,15 @@ function test()
     {   
         for ( index = 0; index < from_number.length; index++ )
         { 
-            if ( from_number.charAt(index) >= initialSystem || from_number.charAt(index) == "-" )
+            if ( from_number.charAt(index) >= initialSystem )
             {
                 document.getElementById("To").value = wrngInpt;
             }
-            if ( characters.test(from_number) || from_number.charAt(index) < initialSystem  ) 
+            else ( characters.test(from_number) || from_number.charAt(index) < initialSystem  ) 
             {
                 from_number = from_number.toString();
                 to_number = parseInt(from_number, initialSystem)
-                if (isNaN(to_number))
+                if (isNaN(to_number) || from_number.charAt(0) == "-")
                 {
                     document.getElementById("To").value = wrngInpt;
                 }

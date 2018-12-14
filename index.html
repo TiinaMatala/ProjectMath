@@ -70,7 +70,7 @@
             <div class="right"><h3>Table</h3>
             <button type="button" class="button_style" onclick="create_table_content()">Print table</button>
             <button type="button" class="button_style" onclick="clear_table_content()">Clear table</button>
-            <table id="number_table" border="1" class="table1">
+            <table id="number_table" class="actualTables">
             </table>
            </div>
         </div>
@@ -102,12 +102,12 @@
         <div id="Randomvalues" class="tabcontent">
             <h3>Random values</h3>
             <p>Here are some random values</p>
-            From: <input type="number" id="from_RNG">
-            To: <input type="number" id="to_RNG">
-            Amount of numbers: <input type="number" id="amount_RNG">
-            <button type="button" class="button_style" onclick="generate_random_value()">Show random value distribution</button>
-            <button type="button" class="button_style" onclick="check_duplicates()">Test</button>
+            From: <input type="number" id="from_RNG" placeholder="Input a minimum value">
+            To: <input type="number" id="to_RNG" placeholder="Input a maximum value">
+            Amount of numbers: <input type="number" id="amount_RNG" placeholder="Input amount of numbers">
+            <button type="button" class="button_style" onclick="generate_random_value()">Distribute random values   </button>
             <p id="random_test"></p>
+            <table id="random_table" class="actualTables"></table>
         </div>
         <div id="Project6" class="tabcontent">
             <h3>Fibonacci Sequence</h3>
@@ -130,5 +130,6 @@
     </body>
     <script src="index.js"></script>
     <script src="combinatronics.js"></script>
+    <script src="randomValues.js"></script>
 
     </html>
