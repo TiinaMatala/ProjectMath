@@ -6,17 +6,25 @@ function factorial(number){
 }
 function combination(n, r){
     if ( n == r) return 1;
-    return factorial(n) / (factorial(r) * factorial(n - r));
+    if (n>r) return factorial(n) / (factorial(r) * factorial(n - r));
+    
+    
 }
 document.getElementById('calculate').onclick =
 function(){
+    var invalid_input = "Invalid input."
     var n =
     parseFloat(document.getElementById('n').value),
     r =
     parseFloat(document.getElementById('r').value);
-    if (n && r){
+    if (n<r){
+        document.getElementById('result_combinations').innerHTML = invalid_input;
+        return alert("n has to be larger than r");
+        
+    }
+   else if (n && r){
         document.getElementById('result_combinations').innerHTML = 
-    combination(n,r);
+    combination(n,r); 
     }
 }
 

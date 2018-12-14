@@ -3,6 +3,7 @@
 
     <head>
         <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
         <script src="NumberConversions.js"></script>
         <script src="numberOutputs.js"></script>
         <script src="randomValues.js"></script>
@@ -27,8 +28,11 @@
             <p>This is the website with mathematical functions</p>
         </div>
         <div id="Numberconversion" class="tabcontent">
-            <h3>Number conversion</h3>
-            <p>Here we convert some numbers</p>
+          <div class="left">  <h3>Number conversion</h3>
+            <p>Here is a tool which you can convert from any number system to another.</p>
+            <p>In example you can convert from hexademical to decimal.</p>
+        </div>
+           <div class="right"> <h3>This is the number conversion tool</h3>
             <div class="fromTo">
                 <table>
                     <tr>
@@ -55,17 +59,20 @@
                         </td>
                         <td> <input type="text" placeholder="The result is shown here" id="To" readonly> </td>
                     </tr>
-                </table>
+                </table></div> <button onclick="test()" class="button_style">Convert</button>
             </div>
-            <button onclick="test()" class="button_style">Convert</button>
         </div>
         <div id="Numberoutputs" class="tabcontent">
+        <div class="left">
             <h3>Number outputs</h3>
+            <p>Here we have a tool which prints a table of various number systems from 0 to 50
+            </p></div>
+            <div class="right"><h3>Table</h3>
             <button type="button" class="button_style" onclick="create_table_content()">Print table</button>
             <button type="button" class="button_style" onclick="clear_table_content()">Clear table</button>
             <table id="number_table" border="1" class="table1">
             </table>
-            <p id="numberParagraph">This is where we output some numbers.</p>
+           </div>
         </div>
         <div id="Combinatorics" class="tabcontent">
           <div class="left"> <h3>Combinatorics</h3>
@@ -76,20 +83,21 @@
             <input type="text" placeholder="n!" id="n">                        
             <input type="text" placeholder="r!" id="r"><br>
             <button id="calculate" class="button_style">Calculate</button>
-            <p id="result_combinations">-</p><br>
+            <p id="result_combinations"></p><br>
             <h3>Permutations</h3>
             <p>Formula n! / (n-r)!</p><br>
             <input type="checkbox" name="repetitions" id="repetitions">Repetitions</input>
             <input type="text" placeholder="n!" id="q">
             <input type="text" placeholder="r!" id="s"><br>   
             <button id="calculate1" class="button_style">Calculate</button>
-            <p id="result_permutations">-</p></div></div>
+            <p id="result_permutations"></p></div></div>
         <div id="Truthtables" class="tabcontent">
-            <h3>Truth tables</h3>
-            <p>Here are some truth tables</p>
+          <div class="left"><h3>Truth table</h3>
+            <p>Here we print an example of a truth table</p></div>
+           <div class="right"><h3>Table example:</h3>
             <button type="button" class="button_style" onclick="truth()">Print Truth Table</button>
             <button type="button" class="button_style" onclick="clearTruthTable()">Clear table</button>
-            <table id="truth_table" class="actualTables"></table>
+            <table id="truth_table" class="actualTables"></table></div>
         </div>
         <div id="Randomvalues" class="tabcontent">
             <h3>Random values</h3>
