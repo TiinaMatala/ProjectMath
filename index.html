@@ -71,8 +71,8 @@
             <h3>Number outputs</h3>
             <p>Here we have a tool which prints a table of numbers from 0 to 50
                 in Binary, Octal and Hexadecimal form.</p>
-            <p>You can also clear the table.</p>
-        </div>
+                <p>You can also clear the table.</p>
+            </div>
             <div class="right"><h3>Table</h3>
             <button type="button" class="button_style" onclick="create_table_content()">Print table</button>
             <button type="button" class="button_style" onclick="clear_table_content()">Clear table</button>
@@ -93,18 +93,18 @@
         <div class="right"><h3>Combinations</h3>
             <p>Here is the formula of combinations</p><br>
             <img src="https://betterexplained.com/wp-content/plugins/wp-latexrender/pictures/be21eae92ceda7a78ac8b0042e7b7407.png" alt="combinations formula" style="padding-bottom: 10px;">
-            <br>            
+            <br>
             <input type="text" placeholder="n!" id="n">                        
-            <input type="text" placeholder="r!" id="r"><br>
+            <input type="text" placeholder="k!" id="r"><br>
             <button id="calculate" class="button_style">Calculate</button>
             <p id="result_combinations"></p><br>
             <h3>Permutations</h3>
             <p>Here is the formula of permutation</p><br>
             <img src="https://betterexplained.com/wp-content/plugins/wp-latexrender/pictures/7164200acc9606cf3547c31ddc023cdd.png" alt="permutation formula" style="padding-bottom: 10px;">
-            <br>            
+            <br>
             <input type="checkbox" name="repetitions" id="repetitions">Repetitions</input>
             <input type="text" placeholder="n!" id="q">
-            <input type="text" placeholder="r!" id="s"><br>   
+            <input type="text" placeholder="k!" id="s"><br>   
             <button id="calculate1" class="button_style">Calculate</button>
             <p id="result_permutations"></p></div></div>
         <div id="Truthtables" class="tabcontent">
@@ -115,37 +115,38 @@
                 table on this page.</p> 
             <p>If you want to learn more, you can watch this educative
             <a href="https://www.youtube.com/watch?v=-z3fRn9V3jM">video</a>
-                (do not mind about the poor picture quality).</p>           
-            <div class="right"><h3>Table example:</h3>
+                (do not mind about the poor picture quality).</p>
+            </div>
+           <div class="right"><h3>Table example:</h3>
             <button type="button" class="button_style" onclick="truth()">Print Truth Table</button>
             <button type="button" class="button_style" onclick="clearTruthTable()">Clear table</button>
             <table id="truth_table" class="actualTables"></table></div>
         </div>
         <div id="Randomvalues" class="tabcontent">
-            <div class="left"><h3>Random values</h3>
+          <div class="left"><h3>Random values</h3>
             <p>Random number sequence fills in the following two conditions:</p>
             <p>it is impossible to foretell the future values based on the previous values
-                    and the values are throughoutly distributed over a defined set or interval.</p>
+                and the values are throughoutly distributed over a defined set or interval.</p>
             <p>Random numbers are important in probability theory and statistical analysis</p>
             <p>If you are interested in learning more, please follow this
                 <a href="https://whatis.techtarget.com/definition/random-numbers">link.</a>
             </p>
-            </div>
-            <div class="right"><h3>Random number generator</h3>
+          </div>
+          <div class="right"><h3>Random number generator</h3>
             <table>
-                <tr><td>From:</td><td><input type="number" id="from_RNG"></td></tr>
-                <tr><td>To:</td><td><input type="number" id="to_RNG"></td></tr>
-                <tr><td>Amount of numbers:</td><td><input type="number" id="amount_RNG"></td></tr>
+            <tr><td>From:</td><td><input type="number" id="from_RNG"></td></tr>
+            <tr><td>To:</td><td><input type="number" id="to_RNG"></td></tr>
+            <tr><td>Amount of numbers:</td><td><input type="number" id="amount_RNG"></td></tr>
             </table>
             <button type="button" class="button_style" onclick="generate_random_value()">Distribute random values   </button>
-                <p id="random_test"></p>
-                <table id="random_table" class="actualTables"></table>
-            </div>
+            <p id="random_test"></p>
+            <table id="random_table" class="actualTables"></table>
+          </div>
         </div>
         <div id="Project6" class="tabcontent">
             <div class="left"><h3>Fibonacci Sequence</h3>
                 <p>Fibonacci sequence in mathematics means that each number is the sum of 
-                    the previous two numbers, starting from 0 and 1.</p>
+                the previous two numbers, starting from 0 and 1.</p>
                 <p>For example when choosing number of sequence to 5, you get 1,1,2,3,5.
                     In some books, zero is left out of the sequence.</p>
                 <p>Applications of Fibonacci sequence include computer algorithms such as 
@@ -158,21 +159,18 @@
             <table>
                 <tr>
                     <td>Number of sequences:</td>
-
-                </tr>
-                <tr>
                     <td>
                         <input type="number" placeholder="Type in an amount of number in the sequence" id="maximum">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <output id="reference"></output>
                         <output id="fiSequences">  </output>
                     </td>
                 </tr>
             </table>
             <button type="button" class="button_style" onclick="Fibonacci_sequence()">Press me</button>
+            </div>
         </div>
     </body>
     <script src="index.js"></script>
