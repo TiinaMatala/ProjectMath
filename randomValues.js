@@ -37,11 +37,11 @@ function generate_random_value()
         {
             zeros.push(random_array[i]);
         }
-        if (random_array[i] % 5 == 0 )
+        if (random_array[i] % 5 == 0 && random_array[i] !== 0 )
         {
             five_div.push(random_array[i]);
         }
-        if (random_array[i] % 7 == 0 )
+        if (random_array[i] % 7 == 0 && random_array[i] !== 0 )
         {
             seven_div.push(random_array[i]);
         }
